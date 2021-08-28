@@ -4,25 +4,10 @@ $(document).ready(function(){
 
     var url ="https://randomuser.me/api/?results=10";
     var p ;
-    var moreInfo;
     var loadMore;
     
     
     fetchInformation(url);
-    
-
-    //radio click function
-    $("input[type='radio']").click(function () {
-
-        $("#volunteers").empty();
-        selectGender=$("input[name='gender']:checked").val();
-        url ="https://randomuser.me/api/?results=10&gender="+selectGender;
-        if (selectGender) {
-            fetchInformation(url);
-        }
-    });
-
-    
 
 
     //fetch info from url
@@ -60,9 +45,6 @@ $(document).ready(function(){
                 $("#volunteers").append(p);
             });
 
-            $("#moreInfo").on("click",function(){
-                document.getElementById('moreInfo').style.display='none';
-            });
             
             //LoadMore button
             loadMore = `<button id = "loadmore"; style="background-color:black; color:white; margin:10px"> Load More</button>`;
