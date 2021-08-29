@@ -1,28 +1,23 @@
-           <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
     <head>
-        <title>Random User Generator</title>    
+          <title>dev-challenge</title>
     </head>
 
-    <body>
-        <!-- container to store info-->
-        <div class="container">
+    <body>    
             
-            <div>
-                <h1>Volunteers List</h1>
-            </div>          
-
-            <div id = "volunteers">
-
-            </div>
-        </div>
-
+        <h1>Volunteers List</h1>
+                 
+        <div id = "volunteers" onclick="show_hide()"></div>
+        
+        <button id = "loadmore" onclick="loadMore()">Load More</button>
+        
     </body>
 
 
