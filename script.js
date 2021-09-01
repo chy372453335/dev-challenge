@@ -47,8 +47,6 @@ function show_hide(id) {
     } else {
         i.style.display='block';
     }
-    
-    
 }
 
 //load 10 more volumteer
